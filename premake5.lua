@@ -5,7 +5,7 @@ newoption {
     default     = "5.0",
 }
 
-workspace "III.VC.SA.IV.Project2DFX"
+workspace "IV.Project2DFX-PreCE"
    configurations { "Release", "Debug" }
    platforms { "Win32" }
    architecture "x32"
@@ -21,11 +21,11 @@ workspace "III.VC.SA.IV.Project2DFX"
    characterset ("Unicode")
    staticruntime "On"
    
-   defines { "rsc_CompanyName=\"III.VC.SA.IV.LCS.VCS.Project2DFX\"" }
-   defines { "rsc_LegalCopyright=\"III.VC.SA.IV.LCS.VCS.Project2DFX\""} 
+   defines { "rsc_CompanyName=\"IV.Project2DFX-PreCE\"" }
+   defines { "rsc_LegalCopyright=\"IV.Project2DFX-PreCE\""} 
    defines { "rsc_InternalName=\"%{prj.name}\"", "rsc_ProductName=\"%{prj.name}\"", "rsc_OriginalFilename=\"%{prj.name}.dll\"" }
-   defines { "rsc_FileDescription=\"III.VC.SA.IV.LCS.VCS.Project2DFX\"" }
-   defines { "rsc_UpdateUrl=\"https://github.com/ThirteenAG/III.VC.SA.IV.Project2DFX\"" }
+   defines { "rsc_FileDescription=\"IV.Project2DFX-PreCE\"" }
+   defines { "rsc_UpdateUrl=\"https://github.com/gillian-guide/IV.Project2DFX-PreCE\"" }
 
    local major = 1
    local minor = 0
@@ -72,11 +72,5 @@ project "2DFXDataGrabber"
    targetdir "data/%{prj.name}/"
    targetextension ".exe"
    characterset ("MBCS")
-project "IIILodLights"
-	files { "includes/*.h", "includes/*.cpp" }
-project "VCLodLights"
-	files { "includes/*.h", "includes/*.cpp" }
-project "SALodLights"
-	files { "includes/*.h", "includes/*.cpp" }
 project "IVLodLights"
 	files { "includes/CLODLightManager.h", "includes/CLODLightManager.cpp" }
