@@ -385,7 +385,7 @@ void CLODLightManager::IV::GetMemoryAddresses()
             CTimer::m_snTimeInMillisecondsPauseMode = *pattern.get_first<int32_t*>(1); //m_snTimeInMilliseconds
             pattern = hook::pattern("A1 ? ? ? ? 8D 48 01 81 E1 07 00 00 80");
             CWeather::CurrentWeather = *pattern.get_first<CWeather::eWeatherType*>(1);
-            pattern = hook::pattern("69 C0 ? ? ? ? 05 ? ? ? ? 50 8D 4C 24 74"); // wrong pattern, doesn't work
+            pattern = hook::pattern("05 ? ? ? ? D9 5C 24 04 8D 4C 24 38");
             mTimeCycle = *pattern.get_first<Timecycle*>(7);
         }
     }
